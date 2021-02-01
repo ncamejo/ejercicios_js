@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios 01 - Video #34</title>
+</head>
+
+<body>
+  <h1>Ejercicios 01 - Video #34</h1>
+
+  <script>
+
+    //1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.
+
+    function countCadena(valor1) {
+      if (typeof (valor1) === 'string') {
+        console.log("Resultado 01");
+        console.log(valor1.length);
+      } else {
+        console.log("El tipo de dato introducido no es un String");
+      }
+    }
+
+    let valor1 = "Primer ejercicio en JS"
+    countCadena(valor1);
+
+    //2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
+
+    function stringSlice(n1, n2) {
+      try {
+        console.log("Resultado 02");
+        console.log(n1.slice(n2));
+      } catch (error) {
+        console.log("El tipo de dato indicado no es correcto, ejemplo stringSlice('cadena de texto', 3);");
+      }
+
+    }
+
+    stringSlice("Esto es una prueba", 5);
+
+
+    //3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
+
+    function stringSplit(texto, caracter) {
+      try {
+        console.log("Resultado 03");
+        console.log(texto.split(caracter));
+      } catch (error) {
+        console.log("El tipo de dato indicado no es correcto");
+      }
+    }
+
+    stringSplit('como estan todos', ',');
+    stringSplit('como estan todos', ' ');
+
+
+    //4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
+
+
+    console.log("Resultado 04");
+
+    function repiteTexto(text, n) {
+      for (let i = 0; i < n; i++) {
+        console.log(text, `${i}`);
+      }
+    }
+
+    repiteTexto('Desarrollo Web', 4);
+
+  </script>
+</body>
+
+</html>
